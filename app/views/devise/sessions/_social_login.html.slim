@@ -16,7 +16,7 @@
 
   - if APP_CONFIG.enabled? "oauth.github"
     .col-xs-12.col-sm-6
-      = link_to user_omniauth_authorize_path(provider: :github), class: 'btn btn-primary btn-block btn-lg' do
+      = link_to user_github_omniauth_authorize_path, class: 'btn btn-primary btn-block btn-lg' do
         i.fa.fa-github
         '&nbsp;Github
 

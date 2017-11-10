@@ -1,10 +1,13 @@
 source "https://rubygems.org"
 
+#ruby ">= 2.4"
+ruby "2.4.2"
+
 gem "active_record_union"
 gem "base32"
 gem "bootstrap-sass", "~> 3.3.4"
 gem "crono"
-gem "devise"
+gem "devise", "~> 4.0.3"
 gem "font-awesome-rails"
 gem "grape"
 gem "grape-entity"
@@ -75,6 +78,8 @@ gem "cconfig", "~> 1.2.0"
 # run:
 #
 # PACKAGING=yes bundle list
+
+gem "debase-ruby_core_source", "~> 0.10.0"
 
 unless packaging?
   group :development do
